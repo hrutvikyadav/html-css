@@ -26,6 +26,19 @@ ex: `<html lang="en"> </html>`
 Determine browser behaviour by adding _self closing_ `<meta>` tags in `<head></head>`\
 ex: Tell browser to parse markup in multiple languages with `<meta charset="UTF-8">`
 
+Add styles using the `<style>` tags inside `<head></head>`\
+OR\
+Use `<link/>` tag inside `<head>` and give the `rel="stylesheet"` and `href="./relative_path"` attributes to include styles from another file
+
+To make the styles look same on desktop and mobile, add a `meta` tag with `content="width=device-width, initial-scale=1.0"` attribute
+
+```html
+<head>
+    ...
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+```
+
 ## Headings
 
 `<h1></h1>` to `<h6>` tags are available with lower number signifying more importance
@@ -49,6 +62,9 @@ __This is a self closing tag__
 
 Use the `src` attribute to provide link for the image
 Also use the `alt` attribute to provide _alternate text to display_ for the __screen reader__, incase _image does not load_
+
+Images are like `inline elements`, to make them act like `block ekements`, use `display: block;` in the `img selector`
+> Needed to center images
 
 ## Link to other pages
 
@@ -128,4 +144,18 @@ ex.
 `<fieldset></fieldset>` element is used to group together related `inputs` and `labels` in _forms_\
 this is a block level element\
 `<legend></legend>` serves as caption for elements in `fieldset`
+___
+
+## divs
+
+`<div>` elements are useful for design layout, rather than actual content\
+commonly used along with `id` attribute to target elements in `css`
+
+## Article
+
+`<article></article>` elements contain multiple related elements
+
+## horizontal dividers
+
+Use `<hr/>` to divide the page horizontally
 ___

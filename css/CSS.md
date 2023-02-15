@@ -11,6 +11,8 @@ h1 {
 h2 {
     text-align: center;
 }
+^^^
+css rule
 ```
 
 One problem with this is repitition of same styles
@@ -27,6 +29,12 @@ As stylesheets can grow big, it is best to include styles in a separate file wit
 then link this file in the html document
 
 ___
+
+## Default styles
+
+When a stylesheet is loaded in browser, browser applies some default styles to some common elements\
+To make sure your styles work correctly, target these elements and override default browser styles
+> Also see fallback values
 
 ## CSS comments
 
