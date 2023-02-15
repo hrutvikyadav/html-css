@@ -203,6 +203,45 @@ Css box model treats all html elements as a box having 4 areas
 3. Border - encloses padding and content, i.e. the element
 4. Margin - the area outside element/border, used to control spacing between elements
 
+> Normalize the box model with `* { box-sizing: border-box }` this will include __padding and border__ _inside_ elements' total width*height, instead of outside(which is default)
+
+___
+
+## Flexbox
+
+Flexbox is a _one-dimensional_ css layout to _control item alignment and spacing_ __within a container__\
+
+To turn a container into flex layout,\
+Add a `div` in html, target it in css, and add the `display` property with value `flex`\
+Now any direct child of this _container `div`_ will become a `flex item`
+
+Flexbox has 2 axes
+
+1. main-axis
+    define this using `flex-direction` property, which has one of four possible values:
+    - row\
+       This is also the default value. Items align _horizontally_, from _left to right_
+    - row-reverse\
+       Items aligned _horizontally_, _right to left_
+    - column\
+        _Vertical_ alignment _left to right_
+    - column-reverse\
+        _Vertical_ alignment _right to left_
+2. cross-axis
+
+`flex-wrap` property determines what happens to items when flex container becomes too small
+setting it's value to `wrap` will wrap the items to the next row/column\
+`no-wrap` will shrink items instead of wrapping
+
+`justify-content` determines item positioning along main axis.
+`align-items` determines item positioning along cross axis.
+
+`object-fit` property can be used to determine how an image gets resized to fit it's container
+use the `cover` value to get a cropped fit with original aspect ratio
+
+For flex, grid and multi column layout, css `gap` property __sets the gap/gutter spacing between rows and columns__\
+This property is _applied to the container_
+
 ___
 
 [^example]: youtube's red buttons on black background
