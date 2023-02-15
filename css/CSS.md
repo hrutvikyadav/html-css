@@ -194,6 +194,17 @@ __Colors can be combined__ with `opacity` or `alpha channel` to change it's tran
 `alpha channel` can be used to _set color and opacity in one go_, with the `rgba()` function, it works the same as `rgb()`, just takes _extra parameter for alpha channel_
 ___
 
+## Box model
+
+Css box model treats all html elements as a box having 4 areas
+
+1. Content - this is the item inside elements, has a height and width
+2. Padding - space surrounding the content
+3. Border - encloses padding and content, i.e. the element
+4. Margin - the area outside element/border, used to control spacing between elements
+
+___
+
 [^example]: youtube's red buttons on black background
 
 [^g-dir]: 90deg-or-180deg-most-common
