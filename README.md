@@ -107,11 +107,13 @@ Nest an image inside `figure` and add `<figcaption>Caption here</figcaption>` el
 ## Forms
 
 Use `<form></form>` element to start a form\
-add `action` attribute to indicate URL where _form data is sent_
+add `action` attribute to indicate URL where _form data is sent_\
+add `method` to specify the __http method_ used to submit form
 
 `<input/>` elements are nested inside form elements to get _different __types__ of data from user_\
 Input elements are self closing\
 `type` attribute is used to create different input types\
+_**Custom validations** can be added_ to form input elements
 
 - `type="radio"` i.e. radio buttons are used for multiple options and single answer
 
@@ -162,4 +164,32 @@ Add __multiple classes__ to a `div` by giving _space separated list of classname
 ## horizontal dividers
 
 Use `<hr/>` to divide the page horizontally
+
+## Dropdowns
+
+`<select></select>` can be used for dropdown functionality
+It contains multiple `<option></option>` elements, that act as label for dropdown options\
+Without a `value` attribute, the text of `option` elements will be sent to server upon submission, which is not much useful
+If value attribute is present, that will be sent while submitting
+
+```html
+<!-- Use with label tag in form -->
+<select id="referrer">
+    <option value="">(select one)</option>
+    <option value="1">Option 1</option>
+    <option value="2">Option 2</option>
+    <option value="3">Other</option>
+</select>
+```
+
+## Textarea
+
+`<textarea></textarea>` allows to receive multiline text input form user
+The area can be predetermined (rows*columns) and also expand or shrink
+
+```html
+<!-- Use with label tag in form -->
+<textarea id="bio" rows="3" cols="30"></textarea>
+```
+
 ___

@@ -46,6 +46,7 @@ ___
 - `px` : describe values in pixels on the screen
 - `%` : values as percentage of parent elements
 - `vh` : value as % of _viewport height_
+- `rem` : _root em_ holds values relative to html element font size
 
 ___
 
@@ -81,6 +82,15 @@ Used to select `pseudo` elements, meaning focused, hovered, visiten link element
 a:visited {
   color: grey;
 }
+```
+
+### Attribute selectors
+
+These will select elements based on provided attributes
+
+```css
+div[class="container1"] { }
+/* selects div with class attr of container1*/
 ```
 
 ## Shorthand properties
