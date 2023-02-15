@@ -150,6 +150,10 @@ ___
 
 `<div>` elements are useful for design layout, rather than actual content\
 commonly used along with `id` attribute to target elements in `css`
+> Empty divs have no height
+
+Add __multiple classes__ to a `div` by giving _space separated list of classnames_ to `class` attribute\
+`<div class="name1 name2 name3"> </div>`
 
 ## Article
 
